@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Yvonne, Happy Birthday!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" href="typing.css">
+	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="typing.js"></script>
+	<script type="text/javascript" src="dots.js"></script>
+	<script type="text/javascript" src="date.js"></script>
+	<script type="text/javascript" src="hearts.js"></script>
+	<script type="text/javascript" src="mouse_click_effect.js"></script>
+</head>
+
 <body>
+<div id="part1">
+	<span class="comments">尾</span>
+	<br />
+	<span class="comments">还记得6年前你的生日么？</span>
+	<br />
+	<div class="comments">
+		<img alt="140x140" src="birthday.jpg" style="width: 804px; height: 598px;">
+	</div>
+</div>
 
-<h2>My First Web Page</h2>
-<p>My First Paragraph.</p>
+<div id="part2">
+	<span class="comments">亲爱的：</span>
+	<br />
+	<span class="comments">生日快乐！</span>
+	<br />
+</div>
 
-<p id="demo"></p>
 
-<script>
-document.getElementById("demo").innerHTML = "Test";
+<div class="cs">
+    <img src="photo.jpg" id="logo">
+</div>
+<div id="mainDiv">
+	<div id="content">
+		<div id="output-wrap">
+			<span id="output"></span>
+			<span class="typing-cursor">|</span>
+		</div>
+	</div>
+</div>
+<canvas id="canvas" class="canvas">
+</canvas>
+<canvas id="pinkboard" class="canvas"></canvas>
+<p class="text" style="color: #ed3073;">
+    We fell in love
+    <br/>
+    <span id="span_dt_dt"></span>
+</p>
+<script language="javascript">
+    show_date_time();
+	S.init();
+	// initHearts();
+	initMouseClickEffect();
 </script>
-
+<iframe src="slience.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe> 
+<audio autoplay="autoplay" src="bgm2.mp3" style="display:none" loop="loop" controls="controls">
+当前浏览器不支持音乐播放
+</audio>
+</div>
 </body>
-</html> 
+</html>
