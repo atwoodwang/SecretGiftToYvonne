@@ -31,12 +31,14 @@ a {
 	background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
 }
 
-.text {
+.together_calender {
 	position: fixed;
-	bottom: 100px;
+	bottom: 1%;
 	text-align: center;
 	width: 100%;
+	font-weight: bold;
 }
+
 
 .canvas {
 	margin: 0 auto;
@@ -92,13 +94,6 @@ img#logo {
 	text-align: center;
 }
 
-.text {
-	position: fixed;
-	bottom: 80px;
-	text-align: center;
-	width: 100%;
-	font-weight: bold;
-}
 
 .text-right {
 	position: fixed;

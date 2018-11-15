@@ -22,8 +22,20 @@
     };
 	
 	S.Next = (function() {
-		document.getElementById("output-wrap").style.display="none";
-		S.Run();
+		document.getElementById("output").innerHTML="";
+		var typing = new Typing({
+			  source: document.getElementById('part2'),
+			  output: document.getElementById('output'),
+			  delay: 300,
+			  done: function() {
+				console.log(this);
+				console.log('done');
+				window.setTimeout(S.Run, 1000);
+				// S.ShowPicture();
+				
+			  }
+			});
+			typing.start();
 	});
 	
 	S.ShowPicture = (function() {
@@ -45,7 +57,8 @@
 	});
 	
 	S.Run = (function() {
-		S.UI.simulate("尾|我的小仙女|小公主|还有|我未来的老婆|我愛你|生日快乐！|by|聪|2018.12.07");
+		document.getElementById("output-wrap").style.display="none";
+		S.UI.simulate("尾|我的小仙女|小公主|还有|我未来的|老婆|我愛你|生日快乐！|from|聪|2018.12.07");
 		S.Drawing.loop(function () {
 			S.Shape.render();
 		});
