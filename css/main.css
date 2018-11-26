@@ -39,6 +39,11 @@ a {
 	font-weight: bold;
 }
 
+#mainDiv{
+	display: block;
+	position: fixed;
+	top:0px;
+}
 
 .canvas {
 	margin: 0 auto;
@@ -63,7 +68,7 @@ canvas {
 }
 
 img#logo {
-	width: 8%;
+	width: 6%;
 	background-size: cover;
 	border-radius: 200px;
 	box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.7);
@@ -125,9 +130,10 @@ img#logo {
 
 #output {
 	font-family: “Arial”,”Microsoft YaHei”,”黑体”,”宋体”,sans-serif;
-	color: #222;
+	color: #f5fffa;
 	font-size:larger;
 	margin-top: 500px;
+	
 }
 
 #music {
@@ -138,4 +144,9 @@ img#logo {
 
 #comments {
 	text-align:center;
+}
+
+#picture {
+	border-radius:10px;
+	box-shadow:0 0 20px rgba(0,0,0,0.05);
 }

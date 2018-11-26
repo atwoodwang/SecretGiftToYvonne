@@ -2,21 +2,24 @@
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
+			document.getElementById("together_calender").style.display="none";
+			document.getElementById("mainDiv").style.display="none";
 			document.getElementById("part1").style.display="none";
 			document.getElementById("part2").style.display="none";
-			var typing = new Typing({
-			  source: document.getElementById('part1'),
-			  output: document.getElementById('output'),
-			  delay: 300,
-			  done: function() {
-				console.log(this);
-				console.log('done');
-				window.setTimeout(S.Next, 1000);
-				// S.ShowPicture();
-				
-			  }
-			});
-			typing.start();
+			// initHearts();
+			//var typing = new Typing({
+			//  source: document.getElementById('part1'),
+			//  output: document.getElementById('output'),
+			// delay: 300,
+			// done: function() {
+			//	console.log(this);
+			//	console.log('done');
+			//	window.setTimeout(S.Next, 1000);
+			//	// S.ShowPicture();
+			//	
+			// }
+			//);
+			//typing.start();
             
         }
     };
@@ -31,29 +34,10 @@
 				console.log(this);
 				console.log('done');
 				window.setTimeout(S.Run, 1000);
-				// S.ShowPicture();
 				
 			  }
 			});
 			typing.start();
-	});
-	
-	S.ShowPicture = (function() {
-		var canvas = document.querySelector('.canvas');
-        var context = canvas.getContext('2d');
-		var imgObj = new Image();
-        imgObj.src ="https://github.com/atwoodwang/SecretGiftToYvonne/blob/master/birthday.png?raw=true";
-		imgObj.onload = function() {
-			var div_width=$("#canvas").width();
-			var div_height=$("#canvas").height();
-			var old_width=804;
-			var old_height=598;
-			var x_margin=(div_width - old_width)/2;
-			var y_margin=(div_height - old_height)/2;
-			context.drawImage(imgObj,x_margin,y_margin,old_width,old_height);
-		}
-		
-		
 	});
 	
 	S.Run = (function() {
@@ -62,6 +46,7 @@
 		S.Drawing.loop(function () {
 			S.Shape.render();
 		});
+		
 	});
 
 
