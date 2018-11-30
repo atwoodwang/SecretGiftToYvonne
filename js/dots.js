@@ -6,7 +6,9 @@
 			document.getElementById("mainDiv").style.display="none";
 			document.getElementById("part1").style.display="none";
 			document.getElementById("part2").style.display="none";
-			// initHearts();
+			//initMouseClickEffect();
+			document.getElementById("album").style.display="none";
+			//initHearts();
 			//var typing = new Typing({
 			//  source: document.getElementById('part1'),
 			//  output: document.getElementById('output'),

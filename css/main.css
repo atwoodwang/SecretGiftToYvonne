@@ -23,9 +23,17 @@ a {
 	color: #ebf7f4;
 }
 
+/*
+* -webkit-linear-gradient(top, #d9afd9 0%, #97d9e1 120%);
+* -webkit-linear-gradient(top, #fed6e3 0%, #97d9e1 120%);
+background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+*/
+
 .body--ready {
-	background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-	background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+	background: -webkit-linear-gradient(top, #fed6e3 50%, #97d9e1 100%);
+	background: -moz-linear-gradient(top, );
 	background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
 	background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
 	background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
@@ -41,7 +49,7 @@ a {
 
 #mainDiv{
 	display: block;
-	position: fixed;
+	position: absolute;
 	top:0px;
 }
 
@@ -129,9 +137,10 @@ img#logo {
 }
 
 #output {
-	font-family: “Arial”,”Microsoft YaHei”,”黑体”,”宋体”,sans-serif;
+	/*font-family: “Arial”,”Microsoft YaHei”,”黑体”,”宋体”,sans-serif;*/
+	font-family: 'Noto Sans SC', sans-serif;
 	color: #f5fffa;
-	font-size:1em;
+	font-size:1vw;
 	margin-top: 500px;
 	
 }

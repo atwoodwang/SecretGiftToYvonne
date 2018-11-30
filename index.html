@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/button.css">
 	<link href="css/album.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="css/cake.css">
 	<script type="text/javascript" src="js/typing.js"></script>
 	<script type="text/javascript" src="js/dots.js"></script>
 	<script type="text/javascript" src="js/date.js"></script>
@@ -17,6 +18,7 @@
 	<script type="text/javascript" src="js/mouse_click_effect.js"></script>
 	<script type="text/javascript" src="js/heart_button.js"></script>
 	<script type="text/javascript" src='js/TweenMax.min.js'></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
 	
 	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 	<script src="js/Carousel.js"></script>
@@ -75,6 +77,20 @@
 </div>
 <canvas id="canvas" class="canvas">
 </canvas>
+<div id="birthdaycake">
+	<div class="pyro">
+		<div class="before"></div>
+	</div>
+
+	<h2>Happy Birthday Yvonne!</h2>
+	<span id="icon">🎉</span>
+	<div class="candle">
+	<div id="flame" class="lit"></div>
+	</div>
+
+	<div class="cake"></div>
+	<div class="plate"></div>
+</div>
 <div class="poster-main" id="album">
 		<div class="poster-btn poster-prev-btn"></div>
 		<ul class="poster-list">
@@ -143,7 +159,8 @@ function clickHandler(){
 		document.getElementById("hearContainer").style.display="none";
 		// document.getElementById("album").style.display="none";
 		$('#album').remove();
-		initMouseClickEffect();
+		$('#birthdaycake').remove();
+		
 		document.getElementById("music").play();
 	    show_date_time();
 		var typing = new Typing({
