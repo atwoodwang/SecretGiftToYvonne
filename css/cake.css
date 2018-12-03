@@ -13,7 +13,7 @@
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 19%;
+    top: 23%;
     font-size: 60px;
   }
 
@@ -22,7 +22,7 @@
 	position:absolute;
     text-align: center;
     width: 100%;
-    top: 18%;
+    top: 23%;
     font-size: 5em;
     background: -webkit-linear-gradient(90deg, #e9e6ff 0%, white 100%);
     -webkit-background-clip: text;
@@ -44,10 +44,10 @@
   }
   .cake {
     position: relative;
-    top: 46%;
+    top: 51%;
     margin: auto;
-    width: 270px;
-    height: 63px;
+    width: 240px;
+    height: 56px;
     background: #f9fdff;
     border-radius: 100%;
     transform: translateZ(100px);
@@ -61,9 +61,9 @@
   */
   .plate {
     position: relative;
-    height: 135px;
-    width: 400px;
-    top: 44%;
+    height: 120px;
+    width: 355px;
+    top: 50%;
 	margin:auto;
     border-radius: 100%;
     background: radial-gradient(ellipse closest-side at center, #e9defa 30%, #f5fffa 100%);
@@ -73,9 +73,9 @@
 
   .candle {
     position: relative;
-    height: 65px;
-    width: 17px;
-    top: 50%;
+    height: 55px;
+    width: 14px;
+    top: 54%;
     margin: auto;
     background: linear-gradient(0deg, #b7f4a7 0%, white 100%);
     border-radius: 4px;
@@ -90,8 +90,8 @@
 
   .lit {
     background: linear-gradient(to bottom, #FFF6D9, #FBC36C);
-    width: 20px;
-    height: 40px;
+    width: 15px;
+    height: 36px;
     /*  Info on border radius. http://www.css3.info/preview/rounded-border/ */
     border-top-left-radius: 10px 35px;
     border-top-right-radius: 10px 35px;

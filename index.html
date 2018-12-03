@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/button.css">
 	<link href="css/album.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="css/cake.css">
+	<link rel="stylesheet" href="css/photo.css">
 	<script type="text/javascript" src="js/typing.js"></script>
 	<script type="text/javascript" src="js/dots.js"></script>
 	<script type="text/javascript" src="js/date.js"></script>
@@ -24,7 +25,7 @@
 	<script src="js/Carousel.js"></script>
 </head>
 
-<body>
+<body onclick="play_music()">
 <div id="part1">
 	<span class="comments">尾</span>
 	<br />
@@ -40,9 +41,9 @@
 	<br />
 	<span class="comments">希望你看到的 是你所期待的美好</span>
 	<br />
-	<span class="comments">我知道 我身上还有很多小毛病</span>
+	<span class="comments">我知道 我身上还有很多毛病 经常惹你不开心</span>
 	<br />
-	<span class="comments">有时候我也会惹你不开心</span>
+	<span class="comments">谢谢你的包容和理解 我很感动也很珍惜</span>
 	<br />
 	<span class="comments">我会努力去成长 去变得更好</span>
 	<br />
@@ -64,7 +65,15 @@
 
 
 <div class="cs">
-    <img src="resource/photo.jpg" id="logo">
+    <img src="resource/p1.jpg" id="logo" class="p1">
+	<img src="resource/p2.jpg" id="logo" class="p2">
+	<img src="resource/p3.jpg" id="logo" class="p3">
+	<img src="resource/p4.jpg" id="logo" class="p4">
+	<img src="resource/p5.jpg" id="logo" class="p5">
+	<img src="resource/p6.jpg" id="logo" class="p6">
+	<img src="resource/p7.jpg" id="logo" class="p7">
+	<img src="resource/p8.jpg" id="logo" class="p8">
+	<img src="resource/p9.jpg" id="logo" class="p9">
 </div>
 
 <div id="mainDiv">
@@ -135,11 +144,17 @@
   <div id='shadow'></div>
   <img id='bigHeart' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/183204/heart_(1).png" alt="heart" height="90%" width="90%">
 </div>
-<p class="together_calender" id="together_calender" style="color: #faf0e6;">
+<p class="together_calender" id="together_calender" style="color: white;">
     We fell in love
     <br/>
     <span id="span_dt_dt"></span>
 </p>
+<audio class="music" id="bgm" src="resource/bgm2.mp3" loop="loop" controls="controls" style="display:none">
+当前浏览器不支持音乐播放
+</audio>
+<audio class="music" id="birthday_song" src="resource/happy_birthday_song.mp3" loop="loop" controls="controls" style="display:none">
+当前浏览器不支持音乐播放
+</audio>
 <script language="javascript">
 	var container = document.getElementById('hearContainer') , 
     bigHeart = document.getElementById('bigHeart') ,
@@ -160,8 +175,9 @@ function clickHandler(){
 		// document.getElementById("album").style.display="none";
 		$('#album').remove();
 		$('#birthdaycake').remove();
-		
-		document.getElementById("music").play();
+		initMouseClickEffect();
+		//document.getElementById("birthday_song").pause();
+		//document.getElementById("bgm").play();
 	    show_date_time();
 		var typing = new Typing({
 			source: document.getElementById('part1'),
@@ -232,10 +248,11 @@ $(".poster-main").Carousel({
 	"delay": 3000,	
 	"verticalAlign":"middle"	
 });
+
+function play_music() {
+	document.getElementById("birthday_song").play();
+}
 </script>
-<audio id="music" src="resource/bgm2.mp3" loop="loop" controls="controls" style="display:none">
-当前浏览器不支持音乐播放
-</audio>
 </div>
 </body>
 </html>

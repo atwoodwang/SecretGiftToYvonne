@@ -8,6 +8,7 @@
 			document.getElementById("part2").style.display="none";
 			//initMouseClickEffect();
 			document.getElementById("album").style.display="none";
+
 			//initHearts();
 			//var typing = new Typing({
 			//  source: document.getElementById('part1'),
